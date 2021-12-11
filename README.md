@@ -1,2 +1,2 @@
-# go-learning
+#dd go-learning
 record code wrriten by go
