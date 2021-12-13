@@ -1,0 +1,9 @@
+.idea
+.DS_Store
+*.log
+*.log.*
+venv
+output
+config_unit_test.yml
+
+
