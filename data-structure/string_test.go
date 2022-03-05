@@ -1,4 +1,3 @@
-
 package data_structure
 
 import "testing"
@@ -16,4 +15,3 @@ func BenchmarkBuilderConcat(b *testing.B) { benchmark(b, builderConcat) }
 func BenchmarkBufferConcat(b *testing.B)  { benchmark(b, bufferConcat) }
 func BenchmarkByteConcat(b *testing.B)    { benchmark(b, byteConcat) }
 func BenchmarkPreByteConcat(b *testing.B) { benchmark(b, preByteConcat) }
-

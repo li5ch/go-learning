@@ -6,7 +6,7 @@ import (
 	"gin/go-zero/greet/internal/svc"
 	"gin/go-zero/greet/internal/types"
 
-	"github.com/tal-tech/go-zero/core/logx"
+	"github.com/zeromicro/go-zero/core/logx"
 )
 
 type GreetLogic struct {

@@ -6,7 +6,6 @@ import (
 	"github.com/RoaringBitmap/roaring"
 )
 
-
 func main() {
 	// example inspired by https://github.com/fzandona/goroar
 	fmt.Println("==roaring==")
@@ -35,7 +34,6 @@ func main() {
 	// computes intersection of the three bitmaps in parallel using 4 workers
 	roaring.ParAnd(4, rb1, rb2, rb3)
 
-
 	// prints 1, 3, 4, 5, 1000
 	i := rb3.Iterator()
 	for i.HasNext() {
@@ -46,7 +44,7 @@ func main() {
 	// next we include an example of serialization
 	buf := new(bytes.Buffer)
 	rb1.WriteTo(buf) // we omit error handling
-	newrb:= roaring.New()
+	newrb := roaring.New()
 	newrb.ReadFrom(buf)
 	if rb1.Equals(newrb) {
 		fmt.Println("I wrote the content to a byte stream and read it back.")
