@@ -19,7 +19,7 @@ type template struct {
 
 func newTemplate(impl implement) *template {
 	return &template{
-		implement:impl,
+		implement: impl,
 	}
 }
 
@@ -31,7 +31,7 @@ func (t *template) Download(uri string) {
 	fmt.Print("finish downloading\n")
 }
 
-func (t* template) save() {
+func (t *template) save() {
 	fmt.Print("default save")
 }
 
@@ -41,7 +41,7 @@ type HTTPDownloader struct {
 
 func NewHTTPDownloader() Downloader {
 	// 注意implement
-	d:= &HTTPDownloader{}
+	d := &HTTPDownloader{}
 	// 这里用子类作为参数传入父类的new模板方法
 	d.implement = newTemplate(d)
 	return d

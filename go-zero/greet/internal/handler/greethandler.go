@@ -6,7 +6,7 @@ import (
 	"gin/go-zero/greet/internal/logic"
 	"gin/go-zero/greet/internal/svc"
 	"gin/go-zero/greet/internal/types"
-	"github.com/tal-tech/go-zero/rest/httpx"
+	"github.com/zeromicro/go-zero/rest/httpx"
 )
 
 func GreetHandler(ctx *svc.ServiceContext) http.HandlerFunc {
